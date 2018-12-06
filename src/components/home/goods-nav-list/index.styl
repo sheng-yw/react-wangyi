@@ -1,0 +1,40 @@
+@import "../../../assets/stylus/mixins.styl"
+.goods-nav
+  padding-top .5rem
+  height 9rem
+  position relative
+  .goods-list
+    height 9rem
+    display flex
+    position absolute
+    top .5rem
+    left 0
+    .goods-item
+      width 5.5rem
+      flex-wrap nowrap
+      padding 0 .4rem
+      a
+        display block
+        div
+          background #F4F4F4
+          img
+            width 5.5rem
+        p,span
+          padding 0 .1rem
+          ellipse()
+        .good-name
+          font-size .7rem
+        .good-info
+          font-size .5rem
+      &:last-child
+        height 58%
+        background #F4F4F4
+        padding .2rem
+        div
+          background #fff
+          /*height 98%*/
+          /*width 98%*/
+          text-align center
+          font-size .7rem
+          padding 2.3rem 0
+

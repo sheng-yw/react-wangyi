@@ -1,0 +1,113 @@
+// 一像素下边框
+bottom-border-1px($color)
+  position relative
+  border none
+  &:after
+    content ''
+    position absolute
+    left 0
+    bottom 0
+    width 100%
+    height 1px
+    background-color $color
+    transform scaleY(0.5)
+
+left-border-1px($color)
+  position relative
+  border none
+  &:after
+    content ''
+    position absolute
+    left 0
+    bottom 0
+    height 100%
+    width  1px
+    background-color $color
+    transform scaleY(0.5)
+right-border-1px($color)
+  position relative
+  border none
+  &:after
+    content ''
+    position absolute
+    left right
+    bottom 0
+    height 100%
+    width  1px
+    background-color $color
+    transform scaleY(0.5)
+// 一像素上边框
+top-border-1px($color)
+  position relative
+  &::before
+    content ''
+    position absolute
+    z-index 200
+    left 0
+    top 0
+    width 100%
+    height 1px
+    background-color $color
+
+//根据像素比缩放1px像素边框
+@media only screen and (-webkit-device-pixel-ratio: 2 )
+  .border-1px
+    &::before
+      transform scaleY(.5)
+
+@media only screen and (-webkit-device-pixel-ratio: 3 )
+  .border-1px
+    &::before
+      transform scaleY(.333333)
+
+//根据坐标变换背景图
+change-footer-img($x, $y)
+  background-image url("../../../assets/img/footerTab.png")
+  background-position 0 $y
+  background-repeat no-repeat
+  background-size: 1.18rem 12.3rem;
+
+//清除浮动
+clearFix()
+  *zoom 1
+  &::after
+    content ''
+    display block
+    clear both
+ellipse()
+  white-space: nowrap
+  overflow:hidden;
+  text-overflow:ellipsis;
+/*
+ 设计图纸是 750 的 我的适配进行缩放
+*/
+px2rem($px)
+  return unit($px * 16/750, 'rem')
+
+both-line()
+  display inline-block
+  height .9rem
+  line-height .9rem
+  font-size .4rem
+  color #7f7f7f
+  position relative
+  margin-bottom .3rem
+  &:before
+    position absolute
+    top 50%
+    left -1.1rem
+    display block
+    content ''
+    width 1rem
+    height 1px
+    background #d9d9d9
+  &:after
+    position absolute
+    top 50%
+    right  -1.1rem
+    display block
+    content ''
+    width 1rem
+    height 1px
+    background #d9d9d9
+

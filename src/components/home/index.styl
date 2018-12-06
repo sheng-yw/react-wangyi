@@ -1,0 +1,108 @@
+@import "../../assets/stylus/mixins.styl"
+.swiper-pagination-bullet
+  width .8rem
+  height 5px;
+  border-radius 10px 50%
+.good-price
+  font-size .6rem
+  color darkred
+.button
+  position absolute
+  bottom 2rem
+  right 0
+  width px2rem(100)
+  height  px2rem(100)
+  background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABSCAMAAADw8nOpAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABRUExURf///7i4uPn5+fr6+gAAAPb29kZGRkdwTAICAgAAAM/Pz9/f34qKim1tberq6mVlZcHBweTk5I+Pj8zMzK6urvLy8n9/f3V1deTk5O7u7lxcXNCpSF4AAAAadFJOU+RX4dcIzR4AEAN4lDYpr/5l6vjt8sT6/KC6nEkVDwAAAkZJREFUWMO1mdeCgyAQRS/NiDVZyyb+/4cumrJGpajMfU08MIUBBlw80lKmM0mpfV/AjUvTkmV51QkOCNVVecZKw9XHkIaXsLzDSl3OEhcVdiC7c1jE78wOhQWYZApOqSyxQGEBCnglLNANpE6vCkFS11QHILUsKgSrKtYTxXqKAjsk1hNdIHWSY6fyRLuQsnxgtx6ltCNloXBAqpA25EHikokIxAXzH6nLw0TDLPUaqZMHTujxH3d88jHHKeWf/Hwj5RUndZXfSF2Is0hR6DlSpxVOq3qZjkhmz0zHM9oqBlI9oz4hZYYoyuQbqRMRBymmaSLiJF/TxBhuFQupxqAbpGSIJiYnZHqPh7ynI1InPB6SmwAhqt2T5bicLUHLgjQiQ+Ld9HXdN0Exv0CXAX/8GSb9BPy11Ahw5a0f6pbzth76W4Az4V86TT38Tqjb71A3/gUEb3RaY/ArzbhxQOuND3zF95vSeh1aGWTnc2Oz8ILboZ1BihA3zgbxOFQYJA9y42zNuR3KDdL+o+3bzZE+ciAdFm744wspDnzmGG40XGG/cQ6HCksSBeS0bczOkup9wMobM9SS6lsLsg+oD8ah/faCjLfjfspG3H1iKm5BJXiHTAm+xDsYvDcKiu2MYNMlOBoQHGAojlkEh0GCIyvFwZrg+E9xSSG4SlFc+AiupRSXZ4orPkEjgqJdQtHUoWg9jczuCLGzN8go2ngUzcYxP9m+lijztUQpGrcU7WWSJjhFq57kQYHk2WPjcYaLs48zh5+Q/gA8BEBW6ufeJgAAAABJRU5ErkJggg==")
+  background-size 100% 100%
+  background-repeat no-repeat
+.wrap
+  position absolute
+  top 3.3rem
+  bottom 2rem
+  left 0
+  right 0
+  .split
+    width 100%
+    height .3rem
+
+  .good-flash-sale
+    height px2rem(340)
+    width px2rem(750)
+    padding px2rem(10) 0
+    .flash-left
+      float left
+      width 50%
+      text-align: center
+      p
+        margin-top .8rem
+        &:first-child
+          font-size .8rem
+        &:last-child
+          font-size .6rem
+      span
+        display inline-block
+        vertical-align middle
+        width px2rem(62)
+        height px2rem(56)
+        line-height  px2rem(56)
+        background #444
+        color: #fff
+        font-size .7rem
+    .flash-right
+      float right
+      width 50%
+      position relative
+      img
+        width 80%
+      .discounts
+        width 2rem
+        height 2rem
+        border-radius 50%
+        background #F59524
+        position absolute
+        bottom  .5rem
+        right 1.8rem
+        p
+          padding .4rem 0 0
+          text-align: center
+          color #fff
+          font-size .6rem
+  .welfare-service
+    width px2rem(750)
+    height  px2rem(300)
+    img
+      width 100%
+      height 100%
+
+
+  .home-footer
+    height px2rem(256)
+    background #414141
+    .footer-button
+      padding 1.2rem 0 .8rem
+      text-align: center
+      a
+        font-size .7rem
+        display inline-block
+        padding .3rem
+        border 1px solid #fff
+        color #fff
+      .span-split
+        display inline-block
+        width 1rem
+        border none
+
+    p
+      color gray
+      text-align: center
+      padding-top .2rem
+      font-size .5rem
+.liwu
+  position absolute
+  bottom 5rem
+  right 0
+  width px2rem(110)
+  height  px2rem(80)
+  background-image url("../../assets/img/liwu.png")
+  background-size 100% 100%
+  background-repeat no-repeat

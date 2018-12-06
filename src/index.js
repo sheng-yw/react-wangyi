@@ -1,12 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDom from 'react-dom';
+import {HashRouter, Route, Switch, Router} from "react-router-dom";
+import {Provider} from 'react-redux'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Main from './components/main'
+import store from './redux/store'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import './mock/mock'
+
+//引入五个一级路由
+
+
+// 第一个参数为虚拟dom对象 ()包裹，第二个参数为渲染的页面区域
+ReactDom.render((
+  <div>
+
+    <Provider store={store}>
+      <HashRouter>
+        <Switch>
+          {/*<Route  component={home}/>*/}
+          <Route  component={Main}/>
+        </Switch>
+      </HashRouter>
+    </Provider>
+  </div>
+
+),document.getElementById('root'))
